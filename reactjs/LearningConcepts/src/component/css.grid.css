@@ -1,0 +1,103 @@
+body {
+    background-color: darkgrey;
+}
+
+.container {
+    margin: 20px;
+    border: 2px solid black;
+
+    /* display: inline-grid; */
+    display: grid;
+    text-align: center;
+
+
+    /* grid-template-columns: 100px 200px 300px; */
+    /* grid-template-columns: repeat(6, 200px); */
+    /* grid-template-columns: repeat(2, 200px) repeat(4, 100px); */
+    /* grid-template-columns: 1fr 3fr 3fr 4fr 5fr; */
+    /* grid-template-columns: repeat(3, minmax(200px, 1fr)); */
+    /* grid-template-columns: repeat(3, minmax(200px, 1fr)); */
+
+    /* grid-template-rows: 100px; */
+    /* grid-template-rows: 100px 150px 200px; */
+    /* grid-template-rows: repeat(3, 100px); */
+    /* grid-template-rows: repeat(3, 100px) 200px; */
+
+    /* height: 800px; */
+    /* grid-template-rows: repeat(5, 50px); */
+    /* grid-template-rows: repeat(5, 1fr); */
+
+    /* grid-template: rows / columns; */
+    /* grid-template: repeat(5, 1fr) / repeat(3, minmax(200px, 1fr)); */
+
+    /* column-gap: 20px; */
+    /* row-gap: 30px; */
+    /* gap: row-gap column gap */
+    /* gap: 30px 20px; */
+
+    /* justify-items: stretch; */
+    /* justify-items: start; */
+    /* justify-items: end; */
+    /* justify-items: center; */
+
+    /* align-items: stretch; */
+    /* align-items: start; */
+    /* align-items: end; */
+    /* align-items: center; */
+
+    /* Syntax: <'align-items'> <'justify-items'> */
+    /* place-items: start end; */
+    /* place-items: center; */
+
+    grid-template: repeat(5, 100px) / repeat(3, 200px);
+
+    /*
+        justify-content - space around columns  
+        align-content - space around rows
+     */
+    /* justify-content: start; end center*/
+    /* justify-content: start; */
+    /* justify-content: end; */
+    /* justify-content: center; */
+    /* justify-content: space-between; */
+    /* justify-content: space-around; */
+    /* justify-content: space-evenly;
+        align-content: space-between; */
+    /* place-content: rows align | columns justify */
+    /* place-content: space-around space-between; */
+
+
+    /* grid-auto-flow: column; */
+    /* row */
+    /* grid-auto-columns: 100px; */
+    /* grid-auto-rows: 200px; */
+    /* grid-template-areas:; */
+
+}
+
+.item1,
+.item5,
+.item9,
+.item13 {
+    background-color: aqua;
+}
+
+.item2,
+.item6,
+.item10,
+.item14 {
+    background-color: rgb(146, 209, 45);
+}
+
+.item3,
+.item7,
+.item11,
+.item15 {
+    background-color: rgb(139, 153, 214);
+}
+
+.item4,
+.item8,
+.item12 {
+    background-color: rgb(241, 199, 15);
+}
